@@ -1,0 +1,210 @@
+/* style.css */
+:root {
+  --font-color: #000;
+  --font-color-secondary: #666;
+  --font-color-extra: #aaa;
+  --color-hr: #ddd;
+  --color-link: #4078F2;
+  --color-background: #fff;
+  --card-bg-color: #fafafa;
+  --card-border-color: #eee;
+  --card-hover-border-color: #4078F2;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --font-color: #fff;
+    --font-color-secondary: #cccccc;
+    --font-color-extra: #aaa;
+    --color-hr: #cccccc;
+    --color-link: #61AEEE;
+    --color-background: #2d303a; /* Slightly different from theme for better contrast */
+    --card-bg-color: #3b3e4a;
+    --card-border-color: #494949;
+    --card-hover-border-color: #61AEEE;
+  }
+}
+
+body {
+    margin: 0;
+    font-family: "Montserrat", "SF UI Text", "PingFang SC", "Hiragino Sans GB",
+    "Microsoft YaHei", "Segoe UI", "Helvetica Neue", Helvetica,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+    background-color: var(--color-background);
+    color: var(--font-color-secondary);
+    text-align: center;
+    padding-bottom: 60px; /* Default footer height */
+    transition: background-color 0.3s, color 0.3s;
+}
+
+header {
+    padding: 2rem 1rem;
+    border-bottom: 1px solid var(--color-hr);
+    margin-bottom: 2rem;
+}
+
+h1 {
+    font-size: 2.5rem;
+    color: var(--font-color);
+}
+
+h3 a {
+    color: var(--color-link);
+    text-decoration: none;
+}
+
+h3 a:hover {
+    text-decoration: underline;
+}
+
+.controls-container {
+    padding: 1rem 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+}
+
+#search-box {
+    flex-grow: 1;
+    padding: 0.8rem;
+    font-size: 1rem;
+    border: 1px solid var(--card-border-color);
+    border-radius: 8px;
+    background-color: var(--card-bg-color);
+    color: var(--font-color);
+    min-width: 200px; /* Ensure it doesn't get too small */
+    transition: border-color 0.3s;
+}
+
+#search-box:focus {
+    outline: none;
+    border-color: var(--color-link);
+}
+
+#category-filters {
+    padding: 0.8rem;
+    font-size: 1rem;
+    border: 1px solid var(--card-border-color);
+    border-radius: 8px;
+    background-color: var(--card-bg-color);
+    color: var(--font-color-secondary);
+    cursor: pointer;
+    transition: border-color 0.3s, color 0.3s;
+}
+
+#category-filters:hover {
+    border-color: var(--color-link);
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 1.5rem;
+    padding: 0 2rem 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.card {
+    background-color: var(--card-bg-color);
+    border-radius: 12px;
+    border: 1px solid var(--card-border-color);
+    transition: border-color 0.3s ease;
+    text-decoration: none;
+    color: var(--font-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1.5rem;
+    aspect-ratio: 1 / 1;
+}
+
+.card:hover {
+    border-color: var(--card-hover-border-color);
+}
+
+.card-icon {
+    width: 48px;
+    height: 48px;
+    margin-bottom: 1rem;
+    object-fit: contain;
+}
+
+.card-name {
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+/* Footer Styles */
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: var(--color-background);
+    padding: 1rem 2rem;
+    border-top: 1px solid var(--color-hr);
+    box-sizing: border-box; /* Ensures padding is included in the width */
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    font-size: 0.9rem;
+    color: var(--font-color-extra);
+}
+
+.copyright, .credits {
+    opacity: 0.9;
+    display: inline-flex; /* Use flex to align items */
+    align-items: baseline;
+}
+
+.gemini-logo {
+    height: 1.1em; /* Set height relative to font size */
+    width: auto;
+    margin: 0 0.5em; /* Add some horizontal space */
+}
+
+.text-container {
+    max-width: 800px;
+    text-align: left;
+    margin: 2rem auto;
+    display: block; /* Override grid display from .container */
+    color: var(--font-color-secondary);
+}
+
+.text-container h2 {
+    color: var(--font-color);
+}
+
+/* --- Responsive Design --- */
+@media (max-width: 600px) {
+    h1 {
+        font-size: 2rem; /* Reduce title size on mobile */
+    }
+
+    .container {
+        padding: 0 1rem 1rem; /* Reduce padding on mobile */
+        gap: 1rem; /* Reduce gap between cards on mobile */
+    }
+
+    .footer-content {
+        flex-direction: column;
+        justify-content: center;
+        gap: 0.5rem; /* Add space between stacked items */
+    }
+
+    body {
+        /* Increase padding to prevent content from being hidden by the taller footer */
+        padding-bottom: 90px; 
+    }
+}

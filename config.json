@@ -1,0 +1,64 @@
+[
+  {
+    "name": "NCBI",
+    "url": "https://ncbi.leemina.moe",
+    "icon":"icons/US-NLM-NCBI-Logo.svg",
+    "description": "This is a root domain proxy. You can try replacing any link starting with https://www.ncbi.nlm.nih.gov/ with https://ncbi.leemina.moe/ to access it. You can also visit the NCBI main site directly by visiting this link.\n --------------- \n这是一个根域名代理，您可以尝试将任何以 https://www.ncbi.nlm.nih.gov/ 开头的链接替换为 https://ncbi.leemina.moe/ 尝试访问，您也可以直接访问该链接以访问 NCBI 主站",
+    "category": "NCBI"
+  },
+  {
+    "name": "Pubmed",
+    "url": "https://pubmed.leemina.moe/",
+    "icon": "icons/US-NLM-NCBI-Logo.svg",
+    "category": "NCBI"
+  },
+  {
+    "name": "BLAST",
+    "url": "https://blast.leemina.moe/",
+    "icon": "icons/US-NLM-NCBI-Logo.svg",
+    "description": "Note: Some links on this page may not be accessible through a proxy. If you need a specific BLAST service, please refer to the following content on this page. If the service is not reverse-proxied, please us and we will add it as soon as possible.\n---------------\n注意：页面内的部分链接可能无法通过代理访问，如果需要特定的 BLAST 服务，请参阅网页后续内容，若该服务没有被反向代理，请向网站管理员发送邮件，管理员会尽快添加",
+    "category": "NCBI"
+  },
+  {
+    "name": "Primer-BLAST",
+    "url": "https://ncbi.leemina.moe/tools/primer-blast/index.cgi",
+    "icon": "icons/US-NLM-NCBI-Logo.svg",
+    "category": "NCBI"
+  },
+  {
+    "name": "Target-P",
+    "url": "https://dtu-health.leemina.moe/services/TargetP-2.0",
+    "icon": "icons/dtu-logo.png",
+    "category": "DTU Health"
+  },
+  {
+    "name": "Signal-P",
+    "url": "https://dtu-health.leemina.moe/services/SignalP-6.0",
+    "icon": "icons/dtu-logo.png",
+    "category": "DTU Health"
+  },
+  {
+    "name": "SecretomeP-2.0",
+    "url": "https://dtu-health.leemina.moe/services/SecretomeP-2.0",
+    "icon": "icons/dtu-logo.png",
+    "category": "DTU Health"
+  },
+  {
+    "name": "DeepLoc-2.1",
+    "url": "https://dtu-health.leemina.moe/services/DeepLoc-2.1/",
+    "icon": "icons/dtu-logo.png",
+    "category": "DTU Health"
+  },
+  {
+    "name": "DeepLocPro-1.0",
+    "url": "https://dtu-health.leemina.moe/services/DeepLocPro-1.0/",
+    "icon": "icons/dtu-logo.png",
+    "category": "DTU Health"
+  },
+  {
+    "name": "PeanutBase",
+    "url": "https://peanutbase.leemina.moe",
+    "icon": "icons/peanut-base.png",
+    "category": "PeanutBase"
+  }
+]
