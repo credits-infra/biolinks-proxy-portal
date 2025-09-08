@@ -60,5 +60,11 @@
     "url": "https://peanutbase.leemina.moe",
     "icon": "icons/peanut-base.png",
     "category": "PeanutBase"
+  },
+  {
+    "name": "UniProt",
+    "url": "https://uniprot.leemina.moe",
+    "icon": "icons/uniprot-logo.svg",
+    "category": "UniProt"
   }
 ]
